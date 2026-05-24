@@ -53,7 +53,7 @@ The platform runs on a **single-node Kubernetes cluster** (expandable), deployed
 | Customer relationship management | CRM | Salesforce (Python) |
 | Session & speaker scheduling | Planning | Node.js (TypeScript) |
 | On-site payments & consumptions | Kassa | Odoo POS (Python) |
-| RFID badge identification | IoT Badge Scanner | Raspberry Pi (Python) |
+| QR-Code badge identification | IoT Badge Scanner | Raspberry Pi (Python) |
 | Invoicing & billing | Facturatie | FOSSBilling (PHP) |
 | Transactional email | Mailing | SendGrid (JavaScript) |
 | Monitoring, logging & alerting | Controlroom | Go + Elasticsearch |
@@ -85,16 +85,17 @@ graph TD
     Admin   -->|HTTPS| PLAN["📅 Planning\nNode.js (TS)"]:::svc
     Admin   -->|HTTPS| KSA["🛒 Kassa\nOdoo POS (Python)"]:::svc
 
-    IOT["🔌 IoT Badge Scanner\nRaspberry Pi (Python)"]:::iot -->|HTTP| KSA
+    IOT["🔌 IoT Badge Scanner\nRaspberry Pi (Python)"]:::iot -->|HTTP| PlatformAPI["Platform API"]
 
     subgraph BROKER ["⚡ RabbitMQ Cluster (dev + prod)"]
         direction LR
-        E1["contact.topic"]:::rmq
-        E2["invoice.topic"]:::rmq
-        E3["heartbeat.direct"]:::rmq
-        E4["news.topic"]:::rmq
-        E5["logs.direct"]:::rmq
-        E6["user.topic"]:::rmq
+        E1["heartbeat.direct"]:::rmq
+        E2["user.topic"]:::rmq
+        E3["invoice.topic"]:::rmq
+        E4["contact.topic"]:::rmq
+        E5["news.topic"]:::rmq
+        E6["logs.direct"]:::rmq
+        E7["..."]:::rmq
     end
 
     FE   <-->|XML/AMQP| BROKER
@@ -195,8 +196,7 @@ flowchart LR
 
 ## 🧩 Services
 
-### 🌐 Frontend
-[![Frontend](https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/frontend.svg)](https://github.com/Integration-Project-2026-Groep-2/Frontend)
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Frontend"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/frontend.svg" alt="Frontend" height="64"></a>
 [![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=flat-square&logo=php&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Frontend)
 [![Drupal](https://img.shields.io/badge/CMS-Drupal-0678BE?style=flat-square&logo=drupal&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Frontend)
 [![Repo](https://img.shields.io/badge/Repo-Frontend-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/Frontend)
@@ -213,8 +213,7 @@ The main public-facing website built with **Drupal**. Visitors register, view th
 
 ---
 
-### 📋 CRM
-[![CRM](https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/crm.svg)](https://github.com/Integration-Project-2026-Groep-2/CRM)
+### <a href="https://github.com/Integration-Project-2026-Groep-2/CRM"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/crm.svg" alt="CRM" height="64"></a>
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/CRM)
 [![Salesforce](https://img.shields.io/badge/CRM-Salesforce-00A1E0?style=flat-square&logo=salesforce&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/CRM)
 [![AsyncAPI](https://img.shields.io/badge/AsyncAPI-v1.5.0-2D9CDB?style=flat-square)](https://github.com/Integration-Project-2026-Groep-2/CRM/blob/main/docs/crm-asyncapi-v1.yaml)
@@ -232,12 +231,9 @@ Salesforce integration layer. A single Python container runs **3 asyncio tasks**
 | Consumes from | 11 queues across other services |
 | MCP server | Exposes diagnostic tools to `mcp-master` |
 
-> 📄 [View AsyncAPI spec online](https://studio.asyncapi.com/?url=https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/CRM/main/docs/crm-asyncapi-v1.yaml)
-
 ---
 
-### 🧾 Facturatie
-[![Facturatie](https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/facturatie.svg)](https://github.com/Integration-Project-2026-Groep-2/Facturatie)
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Facturatie"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/facturatie.svg" alt="Facturatie" height="64"></a>
 [![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=flat-square&logo=php&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Facturatie)
 [![FOSSBilling](https://img.shields.io/badge/Billing-FOSSBilling_0.7.2-E63946?style=flat-square)](https://github.com/Integration-Project-2026-Groep-2/Facturatie)
 [![Repo](https://img.shields.io/badge/Repo-Facturatie-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/Facturatie)
@@ -255,8 +251,7 @@ Billing and invoicing service based on **FOSSBilling 0.7.2**. Generates and fina
 
 ---
 
-### 📅 Planning
-[![Planning](https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/planning.svg)](https://github.com/Integration-Project-2026-Groep-2/Planning)
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Planning"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/planning.svg" alt="Planning" height="64"></a>
 [![TypeScript](https://img.shields.io/badge/TypeScript-Node.js_24-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Planning)
 [![PostgreSQL](https://img.shields.io/badge/DB-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Planning)
 [![Repo](https://img.shields.io/badge/Repo-Planning-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/Planning)
@@ -274,8 +269,7 @@ Manages event **sessions, locations, and speakers**. Exposes a REST API consumed
 
 ---
 
-### ✉️ Mailing
-[![Mailing](https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/mailing.svg)](https://github.com/Integration-Project-2026-Groep-2/Mailing)
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Mailing"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/mailing.svg" alt="Mailing" height="64"></a>
 [![JavaScript](https://img.shields.io/badge/JavaScript-Node.js-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://github.com/Integration-Project-2026-Groep-2/Mailing)
 [![SendGrid](https://img.shields.io/badge/Email-SendGrid-00B0E8?style=flat-square&logo=twilio&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Mailing)
 [![Repo](https://img.shields.io/badge/Repo-Mailing-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/Mailing)
@@ -300,26 +294,24 @@ news.notify.all     → validate XSD → fetch users   → broadcast email  → 
 
 ---
 
-### 🛒 Kassa
-[![Kassa](https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/kassa.svg)](https://github.com/Integration-Project-2026-Groep-2/Kassa)
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Kassa"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/kassa.svg" alt="Kassa" height="64"></a>
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Kassa)
 [![Odoo](https://img.shields.io/badge/POS-Odoo-714B67?style=flat-square&logo=odoo&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Kassa)
 [![Repo](https://img.shields.io/badge/Repo-Kassa-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/Kassa)
 
-Physical **point-of-sale system** based on **Odoo POS**, used at the event venue. Tracks consumption and processes payments. Integrated with the IoT Badge Scanner so attendees can identify themselves by tapping their RFID badge.
+Physical **point-of-sale system** based on **Odoo POS**, used at the event venue. Tracks consumption and processes payments. Integrated with the IoT Badge Scanner so attendees can identify themselves by scanning their QR code.
 
 | | |
 |---|---|
 | Language | Python + JavaScript |
 | Framework | Odoo POS |
-| IoT integration | iot-badge-scanner (Raspberry Pi, RFID) |
+| IoT integration | iot-badge-scanner (Raspberry Pi, QR-Code) |
 | Publishes to | `heartbeat.direct`, `logs.direct` |
 | Consumes from | `crm.user.confirmed`, `contact.topic` |
 
 ---
 
-### 🖥️ Controlroom
-[![Controlroom](https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/controlroom.svg)](https://github.com/Integration-Project-2026-Groep-2/Controlroom)
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Controlroom"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/controlroom.svg" alt="Controlroom" height="64"></a>
 [![Go](https://img.shields.io/badge/Go-1.26-00ADD8?style=flat-square&logo=go&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Controlroom)
 [![Elasticsearch](https://img.shields.io/badge/Elasticsearch-9-005571?style=flat-square&logo=elasticsearch&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Controlroom)
 [![Kibana](https://img.shields.io/badge/Kibana-9.3.1-E8478B?style=flat-square&logo=kibana&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Controlroom)
@@ -348,8 +340,7 @@ The **central monitoring, ingestion, and diagnostic hub** of the platform. Writt
 
 ---
 
-### 🤖 mcp-master
-[![mcp-master](https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/mcp-master.svg)](https://github.com/Integration-Project-2026-Groep-2/mcp-master)
+### <a href="https://github.com/Integration-Project-2026-Groep-2/mcp-master"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/mcp-master.svg" alt="mcp-master" height="64"></a>
 [![Rust](https://img.shields.io/badge/Rust-stable-CE422B?style=flat-square&logo=rust&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/mcp-master)
 [![Prometheus](https://img.shields.io/badge/Metrics-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/mcp-master)
 [![Repo](https://img.shields.io/badge/Repo-mcp--master-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/mcp-master)
@@ -376,19 +367,18 @@ A **Rust-based MCP aggregator** that fans out to the individual MCP servers expo
 
 ---
 
-### 🔌 IoT Badge Scanner
-[![IoT Badge Scanner](https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/iot-badge-scanner.svg)](https://github.com/Integration-Project-2026-Groep-2/iot-badge-scanner)
+### <a href="https://github.com/Integration-Project-2026-Groep-2/iot-badge-scanner"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/iot-badge-scanner.svg" alt="IoT Badge Scanner" height="64"></a>
 [![Python](https://img.shields.io/badge/Python-Raspberry_Pi-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/iot-badge-scanner)
 [![Repo](https://img.shields.io/badge/Repo-iot--badge--scanner-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/iot-badge-scanner)
 
-**Raspberry Pi** RFID badge scanner deployed physically at the event venue. Attendees tap their badge to identify themselves at the Kassa POS for consumption tracking and payments. Structured as a clean client/server/shared architecture.
+**Raspberry Pi** QR-Code badge scanner deployed physically at the event venue. Attendees present or scan their QR code to identify themselves at the point-of-sale (POS) for consumption tracking and payments. Structured as a clean client/server/shared architecture.
 
 | | |
 |---|---|
 | Language | Python |
-| Hardware | Raspberry Pi + RFID reader |
+| Hardware | Raspberry Pi + camera / QR-code scanner |
 | Architecture | `client/` (Pi scanner) · `server/` (bridge) · `shared/` (contracts) |
-| Integration | HTTP to Kassa service |
+| Integration | HTTP to platform services |
 | Deployment | **Edge device** — runs on physical hardware, not in-cluster |
 
 ---
@@ -640,16 +630,16 @@ graph LR
 
 ## 🔌 IoT — Badge Scanner
 
-The **iot-badge-scanner** runs on a **Raspberry Pi** physically deployed at the event venue. It reads attendee RFID badges and communicates with the Kassa service to associate visitor identities with POS transactions.
+The **iot-badge-scanner** runs on a **Raspberry Pi** physically deployed at the event venue. It reads attendee QR codes and communicates with platform services to associate visitor identities with POS transactions.
 
 ```
 iot-badge-scanner/
-├── client/    # Runs on the Raspberry Pi — reads RFID, sends scan events
-├── server/    # Bridge process (connects scanner events to Kassa)
+├── client/    # Runs on the Raspberry Pi — reads QR codes, sends scan events
+├── server/    # Bridge process (connects scanner events to platform services)
 └── shared/    # Shared contracts and data models
 ```
 
-> The scanner is an **edge device** and does **not** run inside Kubernetes. It connects outbound to the cluster's exposed Kassa endpoint (via the domain) or directly over the local event network.
+> The scanner is an **edge device** and does **not** run inside Kubernetes. It connects outbound to the cluster's exposed platform endpoint (via the domain) or directly over the local event network.
 
 ---
 
@@ -694,7 +684,7 @@ Developer → Create GitHub Release (tag + "ready for production")
 | [Kassa](https://github.com/Integration-Project-2026-Groep-2/Kassa) | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) | Odoo POS — on-site cash register & consumption tracker |
 | [Controlroom](https://github.com/Integration-Project-2026-Groep-2/Controlroom) | ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white) | Monitoring hub — Elasticsearch ingestion, watchdog, MCP |
 | [mcp-master](https://github.com/Integration-Project-2026-Groep-2/mcp-master) | ![Rust](https://img.shields.io/badge/-Rust-CE422B?style=flat-square&logo=rust&logoColor=white) | MCP aggregator, Prometheus metrics, AI diagnostics |
-| [iot-badge-scanner](https://github.com/Integration-Project-2026-Groep-2/iot-badge-scanner) | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) | Raspberry Pi RFID badge scanner (edge device) |
+| [iot-badge-scanner](https://github.com/Integration-Project-2026-Groep-2/iot-badge-scanner) | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) | Raspberry Pi QR-Code badge scanner (edge device) |
 | [k8s-manifests](https://github.com/Integration-Project-2026-Groep-2/k8s-manifests) | ![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) | All Kubernetes manifests — ArgoCD App-of-Apps GitOps |
 | [Infra](https://github.com/Integration-Project-2026-Groep-2/Infra) | ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white) | Local Docker Compose, nginx & RabbitMQ configs, scripts |
 
