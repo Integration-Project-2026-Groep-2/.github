@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://github.com/Integration-Project-2026-Groep-2"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/banner.svg" alt="Integration Project 2026 — Groep 2" width="960"></a>
+<a href="https://github.com/Integration-Project-2026-Groep-2"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/banner.svg" alt="Integration Project 2026 — Groep 2" width="1440"></a>
 
 [![Kubernetes](https://img.shields.io/badge/Infra-Kubernetes_%28kubeadm%29-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
 [![Flannel](https://img.shields.io/badge/CNI-Flannel-00b4d8?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/flannel-io/flannel)
@@ -196,7 +196,7 @@ flowchart LR
 
 ## 🧩 Services
 
-### <a href="https://github.com/Integration-Project-2026-Groep-2/Frontend"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/frontend.svg" alt="Frontend" width="384"></a>
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Frontend"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/frontend.svg" alt="Frontend" width="320"></a>
 [![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=flat-square&logo=php&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Frontend)
 [![Drupal](https://img.shields.io/badge/CMS-Drupal-0678BE?style=flat-square&logo=drupal&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Frontend)
 [![Repo](https://img.shields.io/badge/Repo-Frontend-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/Frontend)
@@ -213,7 +213,7 @@ The main public-facing website built with **Drupal**. Visitors register, view th
 
 ---
 
-### <a href="https://github.com/Integration-Project-2026-Groep-2/CRM"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/crm.svg" alt="CRM" width="384"></a>
+### <a href="https://github.com/Integration-Project-2026-Groep-2/CRM"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/crm.svg" alt="CRM" width="320"></a>
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/CRM)
 [![Salesforce](https://img.shields.io/badge/CRM-Salesforce-00A1E0?style=flat-square&logo=salesforce&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/CRM)
 [![AsyncAPI](https://img.shields.io/badge/AsyncAPI-v1.5.0-2D9CDB?style=flat-square)](https://github.com/Integration-Project-2026-Groep-2/CRM/blob/main/docs/crm-asyncapi-v1.yaml)
@@ -233,7 +233,7 @@ Salesforce integration layer. A single Python container runs **3 asyncio tasks**
 
 ---
 
-### <a href="https://github.com/Integration-Project-2026-Groep-2/Facturatie"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/facturatie.svg" alt="Facturatie" width="384"></a>
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Facturatie"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/facturatie.svg" alt="Facturatie" width="320"></a>
 [![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=flat-square&logo=php&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Facturatie)
 [![FOSSBilling](https://img.shields.io/badge/Billing-FOSSBilling_0.7.2-E63946?style=flat-square)](https://github.com/Integration-Project-2026-Groep-2/Facturatie)
 [![Repo](https://img.shields.io/badge/Repo-Facturatie-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/Facturatie)
@@ -251,7 +251,7 @@ Billing and invoicing service based on **FOSSBilling 0.7.2**. Generates and fina
 
 ---
 
-### <a href="https://github.com/Integration-Project-2026-Groep-2/Planning"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/planning.svg" alt="Planning" width="384"></a>
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Planning"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/planning.svg" alt="Planning" width="320"></a>
 [![TypeScript](https://img.shields.io/badge/TypeScript-Node.js_24-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Planning)
 [![PostgreSQL](https://img.shields.io/badge/DB-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Planning)
 [![Repo](https://img.shields.io/badge/Repo-Planning-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/Planning)
@@ -269,7 +269,7 @@ Manages event **sessions, locations, and speakers**. Exposes a REST API consumed
 
 ---
 
-### <a href="https://github.com/Integration-Project-2026-Groep-2/Mailing"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/mailing.svg" alt="Mailing" width="384"></a>
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Mailing"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/mailing.svg" alt="Mailing" width="320"></a>
 [![JavaScript](https://img.shields.io/badge/JavaScript-Node.js-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://github.com/Integration-Project-2026-Groep-2/Mailing)
 [![SendGrid](https://img.shields.io/badge/Email-SendGrid-00B0E8?style=flat-square&logo=twilio&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Mailing)
 [![Repo](https://img.shields.io/badge/Repo-Mailing-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/Mailing)
@@ -294,7 +294,7 @@ news.notify.all     → validate XSD → fetch users   → broadcast email  → 
 
 ---
 
-### <a href="https://github.com/Integration-Project-2026-Groep-2/Kassa"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/kassa.svg" alt="Kassa" width="384"></a>
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Kassa"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/kassa.svg" alt="Kassa" width="320"></a>
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Kassa)
 [![Odoo](https://img.shields.io/badge/POS-Odoo-714B67?style=flat-square&logo=odoo&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Kassa)
 [![Repo](https://img.shields.io/badge/Repo-Kassa-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/Kassa)
@@ -311,7 +311,7 @@ Physical **point-of-sale system** based on **Odoo POS**, used at the event venue
 
 ---
 
-### <a href="https://github.com/Integration-Project-2026-Groep-2/Controlroom"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/controlroom.svg" alt="Controlroom" width="384"></a>
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Controlroom"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/controlroom.svg" alt="Controlroom" width="320"></a>
 [![Go](https://img.shields.io/badge/Go-1.26-00ADD8?style=flat-square&logo=go&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Controlroom)
 [![Elasticsearch](https://img.shields.io/badge/Elasticsearch-9-005571?style=flat-square&logo=elasticsearch&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Controlroom)
 [![Kibana](https://img.shields.io/badge/Kibana-9.3.1-E8478B?style=flat-square&logo=kibana&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Controlroom)
@@ -340,7 +340,7 @@ The **central monitoring, ingestion, and diagnostic hub** of the platform. Writt
 
 ---
 
-### <a href="https://github.com/Integration-Project-2026-Groep-2/mcp-master"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/mcp-master.svg" alt="mcp-master" width="384"></a>
+### <a href="https://github.com/Integration-Project-2026-Groep-2/mcp-master"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/mcp-master.svg" alt="mcp-master" width="320"></a>
 [![Rust](https://img.shields.io/badge/Rust-stable-CE422B?style=flat-square&logo=rust&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/mcp-master)
 [![Prometheus](https://img.shields.io/badge/Metrics-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/mcp-master)
 [![Repo](https://img.shields.io/badge/Repo-mcp--master-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/mcp-master)
@@ -367,7 +367,7 @@ A **Rust-based MCP aggregator** that fans out to the individual MCP servers expo
 
 ---
 
-### <a href="https://github.com/Integration-Project-2026-Groep-2/iot-badge-scanner"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/iot-badge-scanner.svg" alt="IoT Badge Scanner" width="384"></a>
+### <a href="https://github.com/Integration-Project-2026-Groep-2/iot-badge-scanner"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/iot-badge-scanner.svg" alt="IoT Badge Scanner" width="320"></a>
 [![Python](https://img.shields.io/badge/Python-Raspberry_Pi-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/iot-badge-scanner)
 [![Repo](https://img.shields.io/badge/Repo-iot--badge--scanner-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/iot-badge-scanner)
 
