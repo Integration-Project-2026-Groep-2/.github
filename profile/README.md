@@ -196,7 +196,7 @@ flowchart LR
 
 ## 🧩 Services
 
-### <a href="https://github.com/Integration-Project-2026-Groep-2/Frontend"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/frontend.svg" alt="Frontend" height="64"></a>
+### <a href="https://github.com/Integration-Project-2026-Groep-2/Frontend"><img src="https://raw.githubusercontent.com/Integration-Project-2026-Groep-2/.github/main/profile/assets/badges/frontend.svg" alt="Frontend" height="72"></a>
 [![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=flat-square&logo=php&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Frontend)
 [![Drupal](https://img.shields.io/badge/CMS-Drupal-0678BE?style=flat-square&logo=drupal&logoColor=white)](https://github.com/Integration-Project-2026-Groep-2/Frontend)
 [![Repo](https://img.shields.io/badge/Repo-Frontend-181717?style=flat-square&logo=github)](https://github.com/Integration-Project-2026-Groep-2/Frontend)
