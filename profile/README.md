@@ -121,7 +121,7 @@ graph TD
 graph TB
     Internet(["🌍 Internet"])
     CF["☁️ Cloudflare\nDNS + TLS"]
-    NP["NodePort :30098"]
+    NP["NodePort :30097"]
 
     Internet --> CF --> NP
 
@@ -395,7 +395,7 @@ The platform runs on a **single-node Kubernetes cluster** provisioned with `kube
 | CNI | Flannel |
 | Node topology | Single node (expandable) |
 | Ingress / L7 routing | NGINX Gateway Fabric (Gateway API) |
-| External DNS + TLS | Cloudflare → NodePort `:30098` |
+| External DNS + TLS | Cloudflare → NodePort `:30097` |
 | Secret management | Kustomize `secretGenerator` (`.env`-based) + Sealed Secrets |
 | Broker operator | RabbitMQ Cluster Operator (shared, manages dev + prod) |
 | Search operator | Elastic Cloud on Kubernetes — ECK (shared, manages dev + prod) |
@@ -458,7 +458,7 @@ graph LR
 | Layer | Technology |
 |---|---|
 | External DNS + TLS termination | Cloudflare |
-| Cluster entrypoint | NodePort `:30098` |
+| Cluster entrypoint | NodePort `:30097` |
 | L7 host-based routing | NGINX Gateway Fabric (Gateway API) |
 | Inter-pod security | Kubernetes Network Policies (zero-trust) |
 | Internal pod networking | Flannel CNI |
