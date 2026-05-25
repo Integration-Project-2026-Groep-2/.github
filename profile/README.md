@@ -16,7 +16,7 @@
 Services communicate asynchronously via **RabbitMQ** (XML/XSD), are deployed through **ArgoCD** GitOps,  
 monitored in real-time by **Elasticsearch + Kibana**, and AI-diagnosed via the **Model Context Protocol**.
 
-🌐 **[integration-project-2026-groep-2.my.be](https://integration-project-2026-groep-2.my.be)**
+🌐 **[www.integration-project-2026-groep-2.my.be](https://www.integration-project-2026-groep-2.my.be)**
 
 </div>
 
@@ -712,6 +712,6 @@ Made with ❤️ by **EhB Integration Project 2026 Groep 2**
 *Erasmushogeschool Brussel — Academic Year 2025 / 2026*
 
 [![GitHub Org](https://img.shields.io/badge/GitHub-Integration--Project--2026--Groep--2-181717?style=for-the-badge&logo=github)](https://github.com/Integration-Project-2026-Groep-2)
-[![Domain](https://img.shields.io/badge/Live-integration--project--2026--groep--2.my.be-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://integration-project-2026-groep-2.my.be)
+[![Domain](https://img.shields.io/badge/Live-integration--project--2026--groep--2.my.be-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://www.integration-project-2026-groep-2.my.be)
 
 </div>
