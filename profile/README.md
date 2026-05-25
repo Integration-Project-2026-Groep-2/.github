@@ -505,10 +505,10 @@ graph LR
     CRM  -->|"crm.user.*"| CT
     CRM  -->|"crm.status.*"| ST
     FAC  -->|"invoice.finalized"| IT
-    FAC  -->|"routing.heartbeat"| HB
     MAIL -->|"mailing.user.*"| UT
     PLAN -->|"routing.heartbeat"| HB
     KSA  -->|"routing.heartbeat"| HB
+    FAC  -->|"routing.heartbeat"| HB
     CR   -->|"news.notify.all"| NT
 
     HB --> CR2
