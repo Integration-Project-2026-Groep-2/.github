@@ -501,14 +501,14 @@ graph LR
         FAC2["Facturatie\n(user events)"]
     end
 
-    FE   -->|"frontend.heartbeat"| HB
+    FE   -->|"routing.heartbeat"| HB
     CRM  -->|"crm.user.*"| CT
     CRM  -->|"crm.status.*"| ST
     FAC  -->|"invoice.finalized"| IT
-    FAC  -->|"facturatie.heartbeat"| HB
+    FAC  -->|"routing.heartbeat"| HB
     MAIL -->|"mailing.user.*"| UT
-    PLAN -->|"planning.heartbeat"| HB
-    KSA  -->|"kassa.heartbeat"| HB
+    PLAN -->|"routing.heartbeat"| HB
+    KSA  -->|"routing.heartbeat"| HB
     CR   -->|"news.notify.all"| NT
 
     HB --> CR2
