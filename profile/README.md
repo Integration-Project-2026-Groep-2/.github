@@ -441,7 +441,7 @@ k8s-manifests/
 
 ```mermaid
 graph LR
-    ROOT["🐙 App-of-Apps\nargocd/app-of-apps.yaml"]
+    ROOT["🐙 App-of-Apps\nargocd"]
 
     ROOT --> DEV["📦 dev namespace"]
     ROOT --> PROD["📦 prod namespace"]
