@@ -1,4 +1,4 @@
-<svg width="840" height="294" viewBox="0 0 840 294" xmlns="http://www.w3.org/2000/svg">
+<svg width="720" height="252" viewBox="0 0 840 294" xmlns="http://www.w3.org/2000/svg">
 <defs>
   <style>
     @keyframes fade-in { from{opacity:0} to{opacity:1} }
@@ -165,16 +165,16 @@
 </circle>
 
 <!-- ═══  MOVING PACKETS — MCP outbound (mcp-master → node)  ═══ -->
-<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity=".8"><animateMotion dur="4.2s" begin="0s"   repeatCount="indefinite"><mpath href="#m-fe"/></animateMotion></circle>
-<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity=".8"><animateMotion dur="4.2s" begin="2.1s" repeatCount="indefinite"><mpath href="#m-crm"/></animateMotion></circle>
-<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity=".8"><animateMotion dur="4.9s" begin="1.2s" repeatCount="indefinite"><mpath href="#m-cr"/></animateMotion></circle>
-<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity=".8"><animateMotion dur="2.0s" begin="0.5s" repeatCount="indefinite"><mpath href="#m-rmq"/></animateMotion></circle>
+<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity="0"><animate attributeName="opacity" values="0;.8;.8" keyTimes="0;.01;1" dur="4.2s" begin="0s" repeatCount="indefinite"/><animateMotion dur="4.2s" begin="0s" repeatCount="indefinite"><mpath href="#m-fe"/></animateMotion></circle>
+<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity="0"><animate attributeName="opacity" values="0;.8;.8" keyTimes="0;.01;1" dur="4.2s" begin="2.1s" repeatCount="indefinite"/><animateMotion dur="4.2s" begin="2.1s" repeatCount="indefinite"><mpath href="#m-crm"/></animateMotion></circle>
+<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity="0"><animate attributeName="opacity" values="0;.8;.8" keyTimes="0;.01;1" dur="4.9s" begin="1.2s" repeatCount="indefinite"/><animateMotion dur="4.9s" begin="1.2s" repeatCount="indefinite"><mpath href="#m-cr"/></animateMotion></circle>
+<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity="0"><animate attributeName="opacity" values="0;.8;.8" keyTimes="0;.01;1" dur="2.0s" begin="0.5s" repeatCount="indefinite"/><animateMotion dur="2.0s" begin="0.5s" repeatCount="indefinite"><mpath href="#m-rmq"/></animateMotion></circle>
 
 <!-- ═══  MOVING PACKETS — MCP inbound (node → mcp-master)  ═══ -->
-<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity=".8"><animateMotion dur="4.2s" begin="2.0s" repeatCount="indefinite"><mpath href="#n-fe"/></animateMotion></circle>
-<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity=".8"><animateMotion dur="4.2s" begin="4.2s" repeatCount="indefinite"><mpath href="#n-crm"/></animateMotion></circle>
-<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity=".8"><animateMotion dur="4.9s" begin="3.7s" repeatCount="indefinite"><mpath href="#n-cr"/></animateMotion></circle>
-<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity=".8"><animateMotion dur="2.0s" begin="1.5s" repeatCount="indefinite"><mpath href="#n-rmq"/></animateMotion></circle>
+<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity="0"><animate attributeName="opacity" values="0;.8;.8" keyTimes="0;.01;1" dur="4.2s" begin="2.0s" repeatCount="indefinite"/><animateMotion dur="4.2s" begin="2.0s" repeatCount="indefinite"><mpath href="#n-fe"/></animateMotion></circle>
+<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity="0"><animate attributeName="opacity" values="0;.8;.8" keyTimes="0;.01;1" dur="4.2s" begin="4.2s" repeatCount="indefinite"/><animateMotion dur="4.2s" begin="4.2s" repeatCount="indefinite"><mpath href="#n-crm"/></animateMotion></circle>
+<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity="0"><animate attributeName="opacity" values="0;.8;.8" keyTimes="0;.01;1" dur="4.9s" begin="3.7s" repeatCount="indefinite"/><animateMotion dur="4.9s" begin="3.7s" repeatCount="indefinite"><mpath href="#n-cr"/></animateMotion></circle>
+<circle r="1.8" fill="#c084fc" filter="url(#gs)" opacity="0"><animate attributeName="opacity" values="0;.8;.8" keyTimes="0;.01;1" dur="2.0s" begin="1.5s" repeatCount="indefinite"/><animateMotion dur="2.0s" begin="1.5s" repeatCount="indefinite"><mpath href="#n-rmq"/></animateMotion></circle>
 
 
 <!-- ═══  RABBITMQ HUB  ═══ -->
